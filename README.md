@@ -15,7 +15,6 @@ This project aims to develop an application for recognizing snail species based 
 - Keras
 - TensorFlow
 - Flask
-- Other required dependencies (specified in the `requirements.txt` file)
 
 
 ## Custom Models and Advanced Usage
