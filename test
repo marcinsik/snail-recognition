@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <title>Sticky Footer Example</title>
+    <style>
+        body {
+            margin-bottom: 70px; /* adjust height of the footer */
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 70px; /* adjust height of the footer */
+        }
+    </style>
+</head>
+<body>
+    <div class="section-title">
+          <h2>Rozróźnianie gatunków ślimaków</h2>
+        </div>
+
+        <center>
+          <form method="POST" action="/" enctype="multipart/form-data">
+            <p><input class="choose_file" type="file" name="image_upload" accept="image/*"></p>
+
+            <div style="margin-top: 50px">
+              <button id="submit" type="submit" class="btn btn-lg " style="background-color: #9d03fc; color:white">Prześlij</button>
+            </div>
+
+            <div style="margin-top: 50px">
+              <h5><strong>Jest to: </strong>  {{ pred }}</h5>
+<!--              <h5><strong>%: </strong>  {{ prob }}</h5>-->
+            </div>
+
+
+              <div style="padding-top: 50px; margin-left: 10px">
+                <img src="{{ url_for('static',filename=full_filename) }}" width="320" height="250">
+              </div>
+
+
+
+          </form>
+
+    <footer class="bg-light">
+        <div class="container">
+            <p>&copy; My App 2021</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js" integrity="sha512-6/J99SYB/YzhsQ2ZqpD9Z9MvnA7A48JdDb+dV7DFF8yQfV7R/kk85g5dx5+MK8tJgl3qEmuKtNwP7kWjK4vy3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
