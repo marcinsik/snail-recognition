@@ -20,5 +20,5 @@ This project aims to develop an application for recognizing snail species based 
 
 ## Custom Models and Advanced Usage
 
-For advanced users and machine learning enthusiasts, this project also provides a Jupyter Notebook file (`snail_recognition.ipynb`) where you can explore and create your own custom models, experiment with different algorithms, and further enhance the snail species recognition capabilities. Feel free to modify the notebook according to your requirements and contribute your insights back to the project.
+For advanced users and machine learning enthusiasts, this project also provides a Jupyter Notebook file (`snail-species-recognition.ipynb`) where you can explore and create your own custom models, experiment with different algorithms, and further enhance the snail species recognition capabilities. Feel free to modify the notebook according to your requirements and contribute your insights back to the project.
 
